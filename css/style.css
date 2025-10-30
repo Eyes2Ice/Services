@@ -1,2 +1,72 @@
 @import url("./fonts.css");
 @import url("./reset.css");
+
+/* Global */
+body {
+  background-color: #f8f8f8;
+}
+
+/* Header */
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  background-color: #fff;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.burger-icon {
+  transition: all 0.3s;
+}
+
+.burger-icon:focus,
+.burger-icon:active {
+  transform: scale(1.2);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 32px;
+  margin-left: 16px;
+  border-radius: 1px;
+  background-color: #eaeaea;
+}
+
+.logo__svg path {
+  transition: all 0.5s;
+}
+
+.logo:focus .logo__svg path {
+  fill: #ff3e79;
+}
+
+.nav__list {
+  display: flex;
+  gap: 16px;
+}
+
+.nav__item--tablet {
+  display: none;
+}
+
+.nav__btn {
+  transition: all 0.3s;
+}
+
+.nav__btn:focus,
+.nav__btn:active {
+  transform: scale(1.2);
+}

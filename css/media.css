@@ -1,0 +1,41 @@
+@media (width >= 768px) {
+  /* Header */
+  .header__brand {
+    gap: 20px;
+  }
+
+  .header__logo::after {
+    display: none;
+  }
+
+  .header__logo::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    margin-right: 20px;
+    border-radius: 1px;
+    background-color: #eaeaea;
+  }
+
+  .nav__item--tablet {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__item--tablet:nth-child(3)::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    margin-inline: 20px 4px;
+    border-radius: 1px;
+    background-color: #eaeaea;
+  }
+}
+
+@media (width >= 1120px) {
+  .header {
+    display: none;
+  }
+}
