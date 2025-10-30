@@ -79,38 +79,126 @@
           </a>
         </div>
         <div class="header__actions">
-          <nav class="header__nav nav" aria-label="Главная навигация">
-            <ul class="nav__list">
-              <li class="nav__item nav__item--tablet">
-                <button class="nav__btn" aria-label="Позвонить">
-                  <img src="./assets/img/icons/call.svg" alt="" />
-                </button>
-              </li>
-              <li class="nav__item nav__item--tablet">
-                <button class="nav__btn" aria-label="Написать в чат">
-                  <img src="./assets/img/icons/chat.svg" alt="" />
-                </button>
-              </li>
-              <li class="nav__item nav__item--tablet">
-                <button class="nav__btn" aria-label="Профиль">
-                  <img src="./assets/img/icons/profile.svg" alt="" />
-                </button>
-              </li>
-              <li class="nav__item nav__item--mobile">
-                <button class="nav__btn" aria-label="Оставить заявку">
-                  <img src="./assets/img/icons/repair.svg" alt="" />
-                </button>
-              </li>
-              <li class="nav__item nav__item--mobile">
-                <button class="nav__btn" aria-label="Статус ремонта">
-                  <img src="./assets/img/icons/checkstatus.svg" alt="" />
-                </button>
-              </li>
-            </ul>
+          <nav class="hedaer__nav header-nav" aria-label="Главная навигация">
+            <li class="header-nav__item header-nav__item--tablet">
+              <button class="header-nav__btn" aria-label="Позвонить">
+                <img src="./assets/img/icons/call.svg" alt="" />
+              </button>
+            </li>
+            <li class="header-nav__item header-nav__item--tablet">
+              <button class="header-nav__btn" aria-label="Написать в чат">
+                <img src="./assets/img/icons/chat.svg" alt="" />
+              </button>
+            </li>
+            <li class="header-nav__item header-nav__item--tablet">
+              <button class="header-nav__btn" aria-label="Профиль">
+                <img src="./assets/img/icons/profile.svg" alt="" />
+              </button>
+            </li>
+            <li class="header-nav__item">
+              <button class="header-nav__btn" aria-label="Оставить заявку">
+                <img src="./assets/img/icons/repair.svg" alt="" />
+              </button>
+            </li>
+            <li class="header-nav__item">
+              <button class="header-nav__btn" aria-label="Статус ремонта">
+                <img src="./assets/img/icons/checkstatus.svg" alt="" />
+              </button>
+            </li>
           </nav>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="services">
+        <div class="services__inner">
+          <header class="services__header">
+            <h1 class="services__title title">Услуги и сервисы</h1>
+            <nav
+              class="services-nav"
+              aria-label="Функции раздела `Услуги и сервисы`"
+            >
+              <li class="services-nav__item">
+                <button class="services-nav__btn">
+                  Оставить заявку
+                  <img src="./assets/img/icons/repair.svg" alt="" />
+                </button>
+              </li>
+              <li class="services-nav__item">
+                <button class="services-nav__btn">
+                  Статус ремонта
+                  <img src="./assets/img/icons/checkstatus.svg" alt="" />
+                </button>
+              </li>
+            </nav>
+          </header>
+          <nav class="services-tabs">
+            <li class="services-tabs__item">
+              <a
+                href="#devices"
+                class="services-tabs__link services-tabs__link--active"
+                >Ремонтируемые бренды</a
+              >
+            </li>
+            <li class="services-tabs__item">
+              <a href="#" class="services-tabs__link"
+                >Ремонтируемые устройства</a
+              >
+            </li>
+            <li class="services-tabs__item">
+              <a href="#" class="services-tabs__link">Цены на услуги</a>
+            </li>
+            <li class="services-tabs__item">
+              <a href="#" class="services-tabs__link"
+                >Адреса сервисных центров</a
+              >
+            </li>
+            <li class="services-tabs__item">
+              <a href="#" class="services-tabs__link">Специальные цены</a>
+            </li>
+            <li class="services-tabs__item">
+              <a href="#" class="services-tabs__link">Отзывы</a>
+            </li>
+          </nav>
+          <article class="devices" id="devices">
+            <div class="devices__inner">
+              <div class="devices__text">
+                <p>
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p>
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера<span
+                    >,что подтверждает большое количество постоянных клиентов.
+                    Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                    свою очередь, советуют нас родным и близким.</span
+                  >
+                </p>
+                <a href="#" class="devices__link">
+                  <img src="./assets/img/icons/expand.svg" alt="" />
+                  Читать далее
+                </a>
+              </div>
+              <picture class="devices__img">
+                <source
+                  srcset="./assets/img/images/services-mobile-img.png"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./assets/img/images/services-tablet-img.png"
+                  media="(max-width: 1119px)"
+                />
+                <img
+                  src="./assets/img/images/services-desktop-img.png"
+                  alt="Вывеска с логотипом компании и графиком работы"
+                />
+              </picture>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

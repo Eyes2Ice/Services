@@ -4,6 +4,10 @@
 /* Global */
 body {
   background-color: #f8f8f8;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1c21;
 }
 
 /* Header */
@@ -53,20 +57,147 @@ body {
   fill: #ff3e79;
 }
 
-.nav__list {
+.header-nav {
   display: flex;
   gap: 16px;
 }
 
-.nav__item--tablet {
+.header-nav__item--tablet {
   display: none;
 }
 
-.nav__btn {
+.header-nav__btn {
   transition: all 0.3s;
 }
 
-.nav__btn:focus,
-.nav__btn:active {
+.header-nav__btn:focus,
+.header-nav__btn:active {
   transform: scale(1.2);
+}
+
+/* Services */
+.services__inner {
+  padding: 24px 0 35px;
+}
+
+.services__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.services__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.services__title::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 40px;
+  background-image: url("../assets/img/icons/highlight.svg");
+}
+
+.services-nav {
+  display: none;
+}
+
+.services-nav__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  transition: all 0.3s;
+}
+
+.services-nav__btn:hover {
+  color: #ff3e79;
+}
+
+.services-nav__btn img {
+  transition: all 0.3s;
+}
+
+.services-nav__btn:focus img,
+.services-nav__btn:active img {
+  transform: scale(1.2);
+}
+
+.services-tabs {
+  display: flex;
+  margin: 0 0 24px 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #7e7e82;
+  overflow-x: auto;
+}
+
+.services-tabs__item {
+  flex-shrink: 0;
+}
+
+.services-tabs__link {
+  display: block;
+  padding: 8px 9px 8px 16px;
+}
+
+.services-tabs__link:focus {
+  background-color: #fff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.services-tabs__link--active {
+  background-color: #fff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.devices__inner {
+  padding-inline: 16px;
+}
+
+.devices__text {
+  margin-bottom: 16px;
+}
+
+.devices__text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.devices__text p span {
+  display: none;
+}
+
+.devices__text p:last-of-type {
+  display: none;
+}
+
+.devices__link {
+  display: block;
+  margin-top: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  transition: all 0.3s;
+}
+
+.devices__link:focus {
+  color: #41f6d7;
+}
+
+.devices__img img {
+  margin-inline: -16px;
 }
