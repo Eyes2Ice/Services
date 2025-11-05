@@ -133,7 +133,7 @@ body {
   transform: scale(1.2);
 }
 
-.services-tabs {
+.services__tabs {
   display: flex;
   margin: 0 0 24px 16px;
   line-height: 1.5;
@@ -149,6 +149,12 @@ body {
 .services-tabs__link {
   display: block;
   padding: 8px 9px 8px 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.services-tabs__link:hover {
+  color: #1b1c21;
 }
 
 .services-tabs__link:focus {
