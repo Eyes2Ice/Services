@@ -2,12 +2,157 @@
 @import url("./reset.css");
 
 /* Global */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   background-color: #f8f8f8;
   font-family: "TT Lakes";
   font-size: 16px;
   font-weight: 500;
   color: #1b1c21;
+}
+
+/* Aside */
+
+.main__aside {
+  position: fixed;
+  max-width: 320px;
+  height: 100%;
+  padding: 18px 16px 32px;
+  background-color: #fff;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+.aside__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.aside__logo {
+  margin-inline: 16px 94px;
+}
+
+.search-icon {
+  transition: all 0.3s;
+}
+
+.search-icon:focus,
+.search-icon:active {
+  transform: scale(1.2);
+}
+
+.aside__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.main-nav__link:focus,
+.main-nav__link:hover,
+.main-nav__link:active {
+  color: #7e7e82;
+}
+
+.main-nav .current {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #7e7e82;
+}
+
+.main-nav .current::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  display: block;
+  width: 4px;
+  height: 32px;
+  background-image: url("../assets/img/icons/highlight-small.svg");
+}
+
+.aside__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.aside-actions__btn {
+  transition: all 0.3s;
+}
+
+.aside-actions__btn:focus,
+.aside-actions__btn:active {
+  transform: scale(1.2);
+}
+
+.aside__email {
+  margin-bottom: 12px;
+  transition: all 0.3s;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+.aside__email:hover,
+.aside__email:focus,
+.aside__email:active {
+  transform: scale(1.1);
+  transform-origin: top left;
+  color: #ff3e79;
+}
+
+.aside__number {
+  margin-bottom: 8px;
+  transition: all 0.3s;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.03em;
+}
+
+.aside__number:hover,
+.aside__number:focus,
+.aside__number:active {
+  transform: scale(1.1);
+  transform-origin: top left;
+  color: #ff3e79;
+}
+
+.aside__langs {
+  display: flex;
+  gap: 7px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+.aside__langs button {
+  transition: all 0.3s;
+}
+
+.aside__langs button:focus,
+.aside__langs button:hover,
+.aside__langs button:active {
+  color: #ff3e79;
+}
+
+.aside__langs .current button {
+  color: #7e7e82;
 }
 
 /* Header */
@@ -134,12 +279,22 @@ body {
 }
 
 .services__tabs {
+  position: relative;
   display: flex;
   margin: 0 0 24px 16px;
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: #7e7e82;
   overflow-x: auto;
+}
+
+.services__tabs:after {
+  content: "";
+  position: fixed;
+  right: 0;
+  width: 30%;
+  height: 44px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
 }
 
 .services-tabs__item {

@@ -129,33 +129,3 @@
     margin-top: 13px;
   }
 }
-
-@media (width >= 1440px) {
-  .services__inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .services__header {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .services__title::before {
-    display: none;
-  }
-
-  .services-tabs {
-    margin-left: 0;
-  }
-
-  .devices__inner {
-    align-items: center;
-  }
-
-  .devices__text {
-    max-width: 600px;
-  }
-}
