@@ -1,3 +1,14 @@
+@media (width >= 360px) {
+  /* Aside */
+  .main__aside {
+    padding: 18px 24px 32px;
+  }
+
+  .main-nav .current::before {
+    left: -24px;
+  }
+}
+
 @media (width >= 768px) {
   /* Header */
   .header__inner {
@@ -39,6 +50,19 @@
     margin-inline: 20px 4px;
     border-radius: 1px;
     background-color: #eaeaea;
+  }
+
+  /* Aside */
+  .aside__body {
+    gap: 268px;
+  }
+
+  .main-nav {
+    gap: 32px;
+  }
+
+  .aside__number {
+    margin-bottom: 40px;
   }
 
   /* Services */
@@ -127,5 +151,24 @@
 
   .devices__link {
     margin-top: 13px;
+  }
+}
+
+@media (width >= 1440px) {
+  /* Aside */
+  .main__aside {
+    padding: 30px 29px 0 22px;
+  }
+
+  .aside__body {
+    gap: 241px;
+  }
+
+  .main-nav {
+    gap: 28px;
+  }
+
+  .main-nav .current::before {
+    left: -22px;
   }
 }

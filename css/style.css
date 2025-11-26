@@ -18,7 +18,7 @@ body {
 
 .main__aside {
   position: fixed;
-  max-width: 320px;
+  width: 320px;
   height: 100%;
   padding: 18px 16px 32px;
   background-color: #fff;
@@ -33,10 +33,11 @@ body {
 }
 
 .aside__logo {
-  margin-inline: 16px 94px;
+  margin-left: 16px;
 }
 
 .search-icon {
+  margin-left: auto;
   transition: all 0.3s;
 }
 
