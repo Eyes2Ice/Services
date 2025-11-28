@@ -2,6 +2,7 @@
   /* Aside */
   .main__aside {
     padding: 18px 24px 32px;
+    margin-bottom: -90px;
   }
 
   .main-nav .current::before {
@@ -10,6 +11,11 @@
 }
 
 @media (width >= 768px) {
+  /* Global */
+  .body--event {
+    overflow: auto;
+  }
+
   /* Header */
   .header__inner {
     padding-inline: 24px;
