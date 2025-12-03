@@ -111,10 +111,13 @@ body {
 /* Aside */
 .main__aside {
   display: none;
+  position: sticky;
+  top: 0;
   flex-shrink: 0;
   width: 320px;
+  height: 100vh;
   padding: 18px 16px 32px;
-  background-color: #fff;
+  background-color: aqua;
   transition: all 0.3s;
   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
 }
