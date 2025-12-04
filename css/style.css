@@ -1,9 +1,6 @@
 @import url("./fonts.css");
 @import url("./reset.css");
-
-.test h1 {
-  font-size: 150px;
-}
+@import url("./swiper-bundle.min.css");
 
 /* Global */
 html {
@@ -34,6 +31,16 @@ body {
 
 .main__content--blured {
   opacity: 0.05;
+}
+
+.title {
+  padding: 16px 16px 16px 0;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7e7e82;
 }
 
 /* Header */
@@ -261,7 +268,7 @@ body {
 
 /* Services */
 .services__inner {
-  padding: 24px 0 35px;
+  padding: 24px 0;
 }
 
 .services__header {
@@ -404,4 +411,66 @@ body {
 
 .devices__img img {
   margin-inline: -16px;
+}
+
+/* Brands */
+
+.brands__inner {
+  padding: 0 0 24px 16px;
+  border-top: 1px solid #d9fff5;
+}
+
+.brands__title {
+  margin-bottom: 16px;
+}
+
+.brands__slider {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff calc(100% - 30px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff calc(100% - 30px),
+    transparent 100%
+  );
+}
+
+.brands__item {
+  max-width: 240px;
+}
+
+.brands__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin-inline: 6px !important;
+  background-color: #dddddd;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+.brands__btn {
+  display: none;
 }
