@@ -110,6 +110,44 @@
     margin: 0;
     border-radius: 6px;
   }
+
+  /* Brands */
+
+  .brands__inner {
+    padding: 0 24px 32px;
+  }
+
+  .brands__title {
+    margin-bottom: 24px;
+  }
+
+  .brands__slider {
+    mask-image: none;
+  }
+
+  .brands__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-bottom: 24px;
+  }
+
+  .brands__item {
+    max-width: 224px;
+  }
+
+  .brands__link:hover svg,
+  .brands__link:focus svg {
+    transform: scale(1.2);
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .brands__btn {
+    display: block;
+  }
 }
 
 @media (width >= 1120px) {

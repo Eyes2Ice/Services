@@ -406,7 +406,7 @@ body {
 }
 
 .devices__link:focus {
-  color: #41f6d7;
+  color: #ff3e79;
 }
 
 .devices__img img {
@@ -443,6 +443,10 @@ body {
   max-width: 240px;
 }
 
+.brands__item--hidden {
+  display: none;
+}
+
 .brands__link {
   display: flex;
   align-items: center;
@@ -452,6 +456,22 @@ body {
   background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.brands__link svg {
+  transition: all 0.3s;
+}
+
+.brands__link:hover,
+.brands__link:focus {
+  border: 1px solid #ff3e79;
+  box-shadow: inset 0px 0px 10px 0px #ff3e794d;
+}
+
+.brands__link:hover svg,
+.brands__link:focus svg {
+  transform: scale(1.1);
 }
 
 .swiper-pagination {
@@ -473,4 +493,23 @@ body {
 
 .brands__btn {
   display: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  transition: all 0.3s;
+}
+
+.brands__btn img {
+  transition: all 0.3s;
+}
+
+.brands__btn:focus,
+.brands__btn:hover,
+.brands__btn:active {
+  color: #ff3e79;
+}
+
+.brands__btn--active img {
+  transform: rotate(180deg);
 }
